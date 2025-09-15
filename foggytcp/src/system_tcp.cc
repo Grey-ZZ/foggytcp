@@ -33,7 +33,7 @@ void* foggy_socket(const foggy_socket_type_t socket_type,
   sock->init_sock_fd = socket(AF_INET, SOCK_STREAM, 0);
   if (sock->init_sock_fd < 0) {
     perror("ERROR opening socket");
-    return   NULL;
+    return    NULL;
   }
 
   int portno = (uint16_t)atoi(server_port);
